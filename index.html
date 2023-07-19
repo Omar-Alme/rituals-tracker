@@ -88,6 +88,7 @@
           <p class="card-text">
             To get started tracking your habits with rituals, please add your first habit by clicking the button below.
           </p>
+          <!-- Button that triggers modal -->
           <button id="addHabitsBtn" data-bs-toggle="modal" data-bs-target="#habitmodal" class="btn btn-primary add-btn">
             <span class="d-inline d-md-none">+</span>
             <span class="d-none d-md-inline">+ Add New Habit</span>
@@ -99,16 +100,39 @@
     <div id="habit-list" class="">
       <div class="d-flex justify-content-center align-items-center">
         <h2 class="count">Added Habits <span id="added-habits"></span></h2>
+        <!-- Button that triggers modal -->
         <button type="button" data-bs-toggle="modal" data-bs-target="#habitmodal"
           class="btn btn-primary add-btn new-btn-add">
           <span class="d-inline d-md-none">+</span>
           <span class="d-none d-md-inline">+ Add New Habit</span>
         </button>
+        <!-- Modal -->
+        <div class="modal fade habit-modal" id="habitmodal" aria-colspan="habit-modal" aria-labelledby="habitmodalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header position-relative">
+                <h5 class="modal-title d-flex justify-content-center" id="habitmodalLabel">
+                  Add a new habit
+                </h5>
+                <button type="button" class="">
+
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
 
       </div>
 
-
     </div>
+
+
+  </div>
 
 
 
