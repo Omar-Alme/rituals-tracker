@@ -58,6 +58,8 @@ Here is a link to preview the website on all screens [Responsive Preview]()
 
 ## Validator testing
 + ### HTML
+
+
 + ### CSS
 
 + ### JS
