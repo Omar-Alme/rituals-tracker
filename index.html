@@ -99,7 +99,8 @@
       </div>
     </div>
     <!-- Habits list -->
-    <div id="habit-list" class="text-white" style="display: none;">
+    <!-- display none -->
+    <div id="habit-list" class="text-white">
       <div class="d-flex justify-content-center align-items-center">
         <h2 class="count">Added Habits <span id="added-habits"></span></h2>
         <!-- Button that triggers modal -->
@@ -130,8 +131,8 @@
                     placeholder="Enter habit title here ...">
                 </div>
                 <!-- Habit icon 1 camera -->
-                <div class="habit-list">
-                  <div class="d-flex align-items-center justify-content-between">
+                <div class="habit-list" style="margin-bottom: 20px">
+                  <div class="d-flex align-items-center justify-content-between" onclick="handleRadioCheck(this)">
                     <div class="d-flex align-items-center">
                       <svg class="dark-mode-icons" width="24" style="margin-left: 15px; margin-right: 15px" height="24"
                         viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -144,43 +145,117 @@
                           d="M12 18C13.79 18 15.25 16.54 15.25 14.75C15.25 12.96 13.79 11.5 12 11.5C10.21 11.5 8.75 12.96 8.75 14.75C8.75 16.54 10.21 18 12 18Z"
                           stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      <img src="assets/images/camera.png" alt="camera icon" class="light-mode-icons" height="24"
-                        width="24" style="margin-left:15px; margin-right: 15px;">
-                      <span class="fields-popup">Take Pictures</span>
+                      <img src="./assets/images/camera.png" alt="camera" class="light-mode-icons" width="24"
+                        style="margin-left: 15px; margin-right: 15px" ; height="24" />
+                      <span class="fields-popup">Camera</span>
                     </div>
                     <div class="form-check">
                       <div class="form-check">
-                        <input type="radio" class="form-check-input" name="selecthabit" id="selecthabit1">
-                        <label for="selecthabit1" class="form-check-label"></label>
+                        <input class="form-check-input" type="radio" name="selecthabit" id="selecthabit1"
+                          onclick="handleRadioClick(this)" />
+                        <label class="form-check-label" for="selecthabit1"></label>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- Habit icon 2 meditate-->
-                <div class="habit-list">
-                  <div class="d-flex align-items-center justify-content-between">
+                <!-- list 2  -->
+                <div class="habit-list" style="margin-bottom: 20px">
+                  <div class="d-flex align-items-center justify-content-between" onclick="handleRadioCheck(this)">
+                    <div class="d-flex align-items-center">
+                      <svg class="dark-mode-icons" style="margin-left: 15px; margin-right: 15px" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M17.98 10.79V14.79C17.98 15.05 17.97 15.3 17.94 15.54C17.71 18.24 16.12 19.58 13.19 19.58H12.79C12.54 19.58 12.3 19.7 12.15 19.9L10.95 21.5C10.42 22.21 9.56 22.21 9.03 21.5L7.82999 19.9C7.69999 19.73 7.41 19.58 7.19 19.58H6.79001C3.60001 19.58 2 18.79 2 14.79V10.79C2 7.86001 3.35001 6.27001 6.04001 6.04001C6.28001 6.01001 6.53001 6 6.79001 6H13.19C16.38 6 17.98 7.60001 17.98 10.79Z"
+                          stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M21.98 6.79001V10.79C21.98 13.73 20.63 15.31 17.94 15.54C17.97 15.3 17.98 15.05 17.98 14.79V10.79C17.98 7.60001 16.38 6 13.19 6H6.79004C6.53004 6 6.28004 6.01001 6.04004 6.04001C6.27004 3.35001 7.86004 2 10.79 2H17.19C20.38 2 21.98 3.60001 21.98 6.79001Z"
+                          stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M13.4955 13.25H13.5045" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M9.9955 13.25H10.0045" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M6.4955 13.25H6.5045" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                      <img src="./assets/images/messages.png" alt="camera" class="light-mode-icons" width="24"
+                        style="margin-left: 15px; margin-right: 15px" ; height="24" />
+                      <span class="fields-popup">Message</span>
+                    </div>
+                    <div class="form-check">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="selecthabit" id="selecthabit1"
+                          onclick="handleRadioClick(this)" />
+                        <label class="form-check-label" for="selecthabit1"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- list 3  -->
+                <div class="habit-list" style="margin-bottom: 20px">
+                  <div class="d-flex align-items-center justify-content-between" onclick="handleRadioCheck(this)">
                     <div class="d-flex align-items-center">
                       <svg class="dark-mode-icons" width="24" style="margin-left: 15px; margin-right: 15px" height="24"
                         viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
-                          d="M95.83 94.83h-1a6.14 6.14 0 0 0-6.07-5.15H86.89a5.39 5.39 0 0 0 1.22-3.42A9.79 9.79 0 0 0 81.31 77h0a4.2 4.2 0 0 0 .46-7.07l-9.56-7.05L70 47.74c-1-5.34-4.57-6.83-6.4-6.9a61.24 61.24 0 0 0-27.14 0C34.58 40.91 31 42.4 30 47.78l-2.2 15.07L18.25 69.9a4.2 4.2 0 0 0-1.54 4.61h0a4.17 4.17 0 0 0 2 2.47 9.74 9.74 0 0 0-6.84 9.28 5.41 5.41 0 0 0 1.22 3.42H11.39a6.15 6.15 0 0 0-6.07 5.15H4.17a1 1 0 0 0 0 2H95.83a1 1 0 0 0 0-2zM83 80.06a7.66 7.66 0 0 1 3.12 6.2 3.43 3.43 0 0 1-3.42 3.42H50.5A1.78 1.78 0 0 1 50 86.19l26.13-7.31a7.7 7.7 0 0 1 2.21-.34h.09A7.67 7.67 0 0 1 83 80.06zM25.8 75.55l.05 0h0L35 71.08a1 1 0 0 0 .5-.6v6.06H23.76zm10.52 3A30 30 0 0 0 50 82a30 30 0 0 0 13.68-3.45h6.26L49.49 84.26l-.22.07h0L29.73 78.54zm39.9-2H64.44V70.48a1 1 0 0 0 .5.6zm5.14-2.6a2.23 2.23 0 0 1-3.22 1.31l-2-1 2.65-4.07 1.74 1.29A2.22 2.22 0 0 1 81.36 73.94zm-52-9.73a1 1 0 0 0 .4-.66L32 48.12c1-5.15 4.43-5.27 4.56-5.28l.22 0a59.05 59.05 0 0 1 26.45 0l.23 0S67 42.9 68 48.07l2.26 15.48a1 1 0 0 0 .39.66L77.19 69l-2.86 4.38-8.09-3.93-1.8-7.4v-9a1 1 0 0 0-2 0V76.92a27 27 0 0 1-24.9 0V53.05a1 1 0 0 0-2 0v9l-1.8 7.4L25.66 73.4 22.81 69zm-9.9 7.3l1.76-1.3 2.66 4.07-2 1a2.23 2.23 0 0 1-3.19-1.33h0A2.23 2.23 0 0 1 19.43 71.51zM17 80.06a7.7 7.7 0 0 1 6.84-1.18l23.5 7a3.75 3.75 0 0 0-.62 2.05 3.7 3.7 0 0 0 .45 1.78H17.31a3.43 3.43 0 0 1-3.42-3.42A7.66 7.66 0 0 1 17 80.06zM11.39 91.68H88.81a4.14 4.14 0 0 1 4 3.15H7.36A4.14 4.14 0 0 1 11.39 91.68zM50 36.83a12 12 0 1 0-12-12A12 12 0 0 0 50 36.83zm0-22a10 10 0 1 1-10 10A10 10 0 0 1 50 14.83z"
-                          data-name="ICON 10"></path>
+                          d="M22 16.74V4.67001C22 3.47001 21.02 2.58001 19.83 2.68001H19.77C17.67 2.86001 14.48 3.93001 12.7 5.05001L12.53 5.16001C12.24 5.34001 11.76 5.34001 11.47 5.16001L11.22 5.01001C9.44 3.90001 6.26 2.84001 4.16 2.67001C2.97 2.57001 2 3.47001 2 4.66001V16.74C2 17.7 2.78 18.6 3.74 18.72L4.03 18.76C6.2 19.05 9.55 20.15 11.47 21.2L11.51 21.22C11.78 21.37 12.21 21.37 12.47 21.22C14.39 20.16 17.75 19.05 19.93 18.76L20.26 18.72C21.22 18.6 22 17.7 22 16.74Z"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 5.48999V20.49" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M7.75 8.48999H5.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M8.5 11.49H5.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
                       </svg>
-                      <img src="assets/images/meditation.png" alt="meditation icon" class="light-mode-icons" height="24"
-                        width="24" style="margin-left:15px; margin-right: 15px;">
-                      <span class="fields-popup">Meditate</span>
+                      <img src="./assets/images/book.png" alt="camera" class="light-mode-icons" width="24"
+                        style="margin-left: 15px; margin-right: 15px" ; height="24" />
+                      <span class="fields-popup">Journal</span>
                     </div>
                     <div class="form-check">
                       <div class="form-check">
-                        <input type="radio" class="form-check-input" name="selecthabit" id="selecthabit1">
-                        <label for="selecthabit1" class="form-check-label"></label>
+                        <input class="form-check-input" type="radio" name="selecthabit" id="selecthabit1"
+                          onclick="handleRadioClick(this)" />
+                        <label class="form-check-label" for="selecthabit1"></label>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- Habit icon 3 call -->
-                <div class="habit-list">
-                  <div class="d-flex align-items-center justify-content-between">
+                <!-- list 4  -->
+                <div class="habit-list" style="margin-bottom: 20px">
+                  <div class="d-flex align-items-center justify-content-between" onclick="handleRadioCheck(this)">
+                    <div class="d-flex align-items-center">
+                      <svg class="dark-mode-icons" style="margin-left: 15px; margin-right: 15px" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.16006 10.87C9.06006 10.86 8.94006 10.86 8.83006 10.87C6.45006 10.79 4.56006 8.84 4.56006 6.44C4.56006 3.99 6.54006 2 9.00006 2C11.4501 2 13.4401 3.99 13.4401 6.44C13.4301 8.84 11.5401 10.79 9.16006 10.87Z"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M16.41 4C18.35 4 19.91 5.57 19.91 7.5C19.91 9.39 18.41 10.93 16.54 11C16.46 10.99 16.37 10.99 16.28 11"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M4.15997 14.56C1.73997 16.18 1.73997 18.82 4.15997 20.43C6.90997 22.27 11.42 22.27 14.17 20.43C16.59 18.81 16.59 16.17 14.17 14.56C11.43 12.73 6.91997 12.73 4.15997 14.56Z"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M18.3401 20C19.0601 19.85 19.7401 19.56 20.3001 19.13C21.8601 17.96 21.8601 16.03 20.3001 14.86C19.7501 14.44 19.0801 14.16 18.3701 14"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <img src="./assets/images/profile-2user.png" alt="camera" class="light-mode-icons" width="24"
+                        style="margin-left: 15px; margin-right: 15px" ; height="24" />
+                      <span class="fields-popup">User</span>
+                    </div>
+                    <div class="form-check">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="selecthabit" id="selecthabit1"
+                          onclick="handleRadioClick(this)" />
+                        <label class="form-check-label" for="selecthabit1"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- list 5  -->
+                <div class="habit-list" style="margin-bottom: 20px">
+                  <div class="d-flex align-items-center justify-content-between" onclick="handleRadioCheck(this)">
                     <div class="d-flex align-items-center">
                       <svg class="dark-mode-icons" width="24" style="margin-left: 15px; margin-right: 15px" height="24"
                         viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,92 +267,47 @@
                         <path d="M22 9C22 5.13 18.87 2 15 2" stroke="white" stroke-width="1.5" stroke-linecap="round"
                           stroke-linejoin="round" />
                       </svg>
-                      <img src="assets/images/call-calling.png" alt="Phone call icon" class="light-mode-icons"
-                        height="24" width="24" style="margin-left:15px; margin-right: 15px;">
-                      <span class="fields-popup">Cold Call</span>
+                      <img src="./assets/images/call-calling.png" alt="camera" class="light-mode-icons" width="24"
+                        style="margin-left: 15px; margin-right: 15px" ; height="24" />
+                      <span class="fields-popup">Contact</span>
                     </div>
                     <div class="form-check">
                       <div class="form-check">
-                        <input type="radio" class="form-check-input" name="selecthabit" id="selecthabit1">
-                        <label for="selecthabit1" class="form-check-label"></label>
+                        <input class="form-check-input" type="radio" name="selecthabit" id="selecthabit1"
+                          onclick="handleRadioClick(this)" />
+                        <label class="form-check-label" for="selecthabit1"></label>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- Habit icon 4 journal -->
-                <div class="habit-list">
-                  <div class="d-flex align-items-center justify-content-between">
+                <!-- list 6  -->
+                <div class="habit-list" style="margin-bottom: 20px">
+                  <div class="d-flex align-items-center justify-content-between" onclick="handleRadioCheck(this)">
                     <div class="d-flex align-items-center">
-                      <svg class="dark-mode-icons" width="24" style="margin-left: 15px; margin-right: 15px" height="24"
+                      <svg class="dark-mode-icons" style="margin-left: 15px; margin-right: 15px" width="24" height="24"
                         viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 2V5" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M16 2V5" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 13H15" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 17H12" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                          stroke-linecap="round" stroke-linejoin="round" />
                         <path
-                          d="M22 16.74V4.67001C22 3.47001 21.02 2.58001 19.83 2.68001H19.77C17.67 2.86001 14.48 3.93001 12.7 5.05001L12.53 5.16001C12.24 5.34001 11.76 5.34001 11.47 5.16001L11.22 5.01001C9.44 3.90001 6.26 2.84001 4.16 2.67001C2.97 2.57001 2 3.47001 2 4.66001V16.74C2 17.7 2.78 18.6 3.74 18.72L4.03 18.76C6.2 19.05 9.55 20.15 11.47 21.2L11.51 21.22C11.78 21.37 12.21 21.37 12.47 21.22C14.39 20.16 17.75 19.05 19.93 18.76L20.26 18.72C21.22 18.6 22 17.7 22 16.74Z"
-                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M12 5.48999V20.49" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <path d="M7.75 8.48999H5.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <path d="M8.5 11.49H5.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                          d="M16 3.5C19.33 3.68 21 4.95 21 9.65V15.83C21 19.95 20 22.01 15 22.01H9C4 22.01 3 19.95 3 15.83V9.65C3 4.95 4.67 3.69 8 3.5H16Z"
+                          stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
                           stroke-linejoin="round" />
                       </svg>
-                      <img src="assets/images/note.png" alt="journal icon" class="light-mode-icons" height="24"
-                        width="24" style="margin-left:15px; margin-right: 15px;">
-                      <span class="fields-popup">Journal</span>
+                      <img src="./assets/images/note.png" alt="camera" class="light-mode-icons" width="24"
+                        style="margin-left: 15px; margin-right: 15px" ; height="24" />
+                      <span class="fields-popup">Writing</span>
                     </div>
                     <div class="form-check">
                       <div class="form-check">
-                        <input type="radio" class="form-check-input" name="selecthabit" id="selecthabit1">
-                        <label for="selecthabit1" class="form-check-label"></label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Habit icon 5 read-->
-                <div class="habit-list">
-                  <div class="d-flex align-items-center justify-content-between">
-                    <div class="d-flex align-items-center">
-                      <svg class="dark-mode-icons" width="24" style="margin-left: 15px; margin-right: 15px" height="24"
-                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M22 16.74V4.67001C22 3.47001 21.02 2.58001 19.83 2.68001H19.77C17.67 2.86001 14.48 3.93001 12.7 5.05001L12.53 5.16001C12.24 5.34001 11.76 5.34001 11.47 5.16001L11.22 5.01001C9.44 3.90001 6.26 2.84001 4.16 2.67001C2.97 2.57001 2 3.47001 2 4.66001V16.74C2 17.7 2.78 18.6 3.74 18.72L4.03 18.76C6.2 19.05 9.55 20.15 11.47 21.2L11.51 21.22C11.78 21.37 12.21 21.37 12.47 21.22C14.39 20.16 17.75 19.05 19.93 18.76L20.26 18.72C21.22 18.6 22 17.7 22 16.74Z"
-                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M12 5.48999V20.49" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <path d="M7.75 8.48999H5.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                        <path d="M8.5 11.49H5.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                          stroke-linejoin="round" />
-                      </svg>
-                      <img src="assets/images/book.png" alt="book icon" class="light-mode-icons" height="24" width="24"
-                        style="margin-left:15px; margin-right: 15px;">
-                      <span class="fields-popup">Read</span>
-                    </div>
-                    <div class="form-check">
-                      <div class="form-check">
-                        <input type="radio" class="form-check-input" name="selecthabit" id="selecthabit1">
-                        <label for="selecthabit1" class="form-check-label"></label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Habit icon 6 exercise-->
-                <div class="habit-list">
-                  <div class="d-flex align-items-center justify-content-between">
-                    <div class="d-flex align-items-center">
-                      <svg class="dark-mode-icons" width="24" style="margin-left: 15px; margin-right: 15px" height="24"
-                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#333" fill-rule="evenodd"
-                          d="M31 14C31 13.4477 31.4477 13 32 13H36C36.5523 13 37 13.4477 37 14V16H40C40.5523 16 41 16.4477 41 17V23H44V25H41V31C41 31.5523 40.5523 32 40 32H37V34C37 34.5523 36.5523 35 36 35H32C31.4477 35 31 34.5523 31 34V25H17V34C17 34.5523 16.5523 35 16 35H12C11.4477 35 11 34.5523 11 34V32H8C7.44772 32 7 31.5523 7 31V25H4V23H7V17C7 16.4477 7.44772 16 8 16H11V14C11 13.4477 11.4477 13 12 13H16C16.5523 13 17 13.4477 17 14V23H31V14ZM13 33H15V15H13V33ZM11 18H9V30H11V18ZM37 30V18H39V30H37ZM35 15V33H33V15H35Z"
-                          clip-rule="evenodd"></path>
-                      </svg>
-                      <img src="assets/images/exercise.png" alt="dumbell icon" class="light-mode-icons" height="24"
-                        width="24" style="margin-left:15px; margin-right: 15px;">
-                      <span class="fields-popup">Exercise</span>
-                    </div>
-                    <div class="form-check">
-                      <div class="form-check">
-                        <input type="radio" class="form-check-input" name="selecthabit" id="selecthabit1">
-                        <label for="selecthabit1" class="form-check-label"></label>
+                        <input class="form-check-input" type="radio" name="selecthabit" id="selecthabit1"
+                          onclick="handleRadioClick(this)" />
+                        <label class="form-check-label" for="selecthabit1"></label>
                       </div>
                     </div>
                   </div>
