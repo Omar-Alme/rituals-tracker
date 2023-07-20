@@ -54,11 +54,19 @@ function enableLightMode() {
   modalInput.style.color = "black";
   footer.style.color = "black";
 
-  // Save the mode preference to LocalStorage
+  // Save the theme preference to LocalStorage
   localStorage.setItem("mode", "dark");
 }
 
-
+// Function Checks user's theme preference from local storage and apllies it 
+function checkModePreference() {
+  const currentMode = localStorage.getItem("mode");
+  if (currentMode === "dark") {
+    enableDarkMode();
+  } else {
+    enableLightMode();
+  }
+}
 
 
 
