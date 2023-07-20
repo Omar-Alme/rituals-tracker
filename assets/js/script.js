@@ -124,6 +124,19 @@ function handleNextButtonClick() {
 
 }
 
+//On page refresh user retrives the habits from local storage
+
+function displayStoredHabits() {
+  var storedHabits = localStorage.getItem("habits");
+  var habits = storedHabits ? JSON.parse(storedHabits) : [];
+
+  var habitListContainer = document.getElementById("habit-list-container");
+  habitCount = habits.length;
+
+
+
+
+}
 
 // Changing the theme
 let mode;
