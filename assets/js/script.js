@@ -106,7 +106,22 @@ function handleNextButtonClick() {
     createHabitCard(habitId, habitText, newHabitTitle, habitListContainer);
 
     // Store the habit in local storage
+    var habitData = {
+      habitId: habitId,
+      habitText: habitText,
+      habitTitle: newHabitTitle,
+    };
+
+    var storedHabits = localStorage.getItem("habits");
+    var habits = storedHabits ? JSON.parse(storedHabits) : [];
+    habits.push(habitData);
+    localStorage.setItem("habits", JSON.stringify(habits));
+
+    break;
   }
+
+  // Re
+
 }
 
 
