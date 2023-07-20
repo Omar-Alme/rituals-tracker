@@ -22,6 +22,20 @@ Here is a link to preview the website on all screens [Responsive Preview](https:
 
 ## Features
 
+  - Lightmode
+
+![lightmode](assets/documentations/light.png)
+![lightmode](assets/documentations/light1.png)
+![lightmode](assets/documentations/light2.png)
+![lightmode](assets/documentations/light3.png)
+![lightmode](assets/documentations/light4.png)
+
+   - Darkmode
+![darkmode](assets/documentations/dark.png)
+![darkmode](assets/documentations/dark1.png)
+![darkmode](assets/documentations/dark2.png)
+![darkmode](assets/documentations/dark3.png)
+
 
 ## Design
 
