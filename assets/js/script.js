@@ -1,3 +1,22 @@
+// Functions that opens notifications icon
+function notifications() {
+  // Add event listener for the icon
+  var notificationIcon = document.getElementById("notification-icon");
+  notificationIcon.addEventListener("click", function () {
+    var notificationPopup = document.getElementById("notification-popup");
+    notificationPopup.classList.toggle("show");
+  });
+
+  var closeIcon = document.getElementById("close-icon");
+  closeIcon.addEventListener("click", function () {
+    var notificationPopup = document.getElementById("notification-popup");
+    notificationPopup.classList.remove("show");
+  });
+
+  // Event listeners
+
+}
+
 // Changing the theme
 let mode;
 var moon = document.getElementById("moon");
@@ -84,6 +103,13 @@ function limitInputLength(event) {
   const words = inputValue.split(/\s+/);
 
   if (words.length > maxWords) {
-    input.value = words.slice(0, maxWords)
+    input.value = words.slice(0, maxWords).join(" ");
+  }
+
+  const remainingText = words.slice(maxWords).join(" ");
+  if (remainingText) {
+    const cursorPosition = input.selectionStart - remainingText.length;
+    input.value = input.value.slice(0, cursorPosition);
+    input.setSelectionRange(cursorPosition, cursorPosition);
   }
 }
