@@ -136,3 +136,10 @@ body.light-mode-body {
   width: 125px;
   height: 125px;
 }
+
+.card-desc {
+  font-size: 18px;
+  font-weight: 500px;
+  line-height: 22px;
+  color: #686a63;
+}
