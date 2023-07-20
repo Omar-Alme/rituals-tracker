@@ -248,6 +248,10 @@ body.modal-open {
   line-height: normal;
 }
 
+.habit-card-row {
+  margin: 30px 0 30px;
+}
+
 .habit-card {
   width: 186px;
   height: 130px;
@@ -257,11 +261,76 @@ body.modal-open {
   margin-top: 25px;
   box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease-in-out;
-
-
 }
 
+/* Active habit card styles */
+.light-mode-body .habit-card.active .habit-text {
+  color: white;
+}
 
+.light-mode-body .habit-card.active {
+  color: var(--secondary);
+}
+
+.light-mode-body .habit-card.active .delete-button {
+  color: white;
+}
+
+.habit-card.active {
+  background-color: var(--tertiary);
+}
+
+.habit-card:hover {
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
+.habit-icon {
+  margin-bottom: 8px;
+}
+
+.navbar-toggler-icon i.text-primary {
+  color: var(--tertiary);
+}
+
+.light-mode-body .navbar-toggler-icon i.text-primary {
+  color: var(--secondary);
+}
+
+.habit-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.habit-card.active .habit-text {
+  color: var(--dark);
+}
+
+.habit-card.active .delete-button {
+  color: var(--dark) !important;
+}
+
+.modal-content {
+  background-color: var(--dark);
+  border: 3px solid var(--tertiary);
+}
+
+.habit-list {
+  border-radius: 8px;
+  border: 1px solid #686a63;
+  padding: 5px;
+}
+
+.selected {
+  border: 1px solid var(--tertiary);
+  background: var(--secondary);
+}
+
+.new-habit-input {
+  width: 100%;
+}
 
 /* Buttons */
 .add-btn {
