@@ -45,6 +45,18 @@ body.light-mode-body {
   box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+.logo-container {
+  text-align: center;
+}
+
+.theme {
+  background-color: var(--tertiary);
+  border-radius: 25px;
+  height: 40px;
+  width: 80px;
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
 .sun-img {
   margin-left: 13px;
   position: relative;
@@ -81,6 +93,10 @@ body.light-mode-body {
   margin-left: 10px;
 }
 
+.user-name {
+  color: white;
+}
+
 .user-info p {
   color: var(--primary);
   font-weight: 500;
@@ -102,4 +118,21 @@ body.light-mode-body {
   opacity: 0.7;
   margin: 0 12px 0 17px;
   box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* hamburger menu */
+.navbar-toggler-icon i.text-primary {
+  color: var(--tertiary) !important;
+}
+
+.light-mode-body .navbar-toggler-icon i.text-primary {
+  color: var(--secondary) !important;
+}
+
+
+
+/* Rituals container (card) */
+.card-image {
+  width: 125px;
+  height: 125px;
 }
