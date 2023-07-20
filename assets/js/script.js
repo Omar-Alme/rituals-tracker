@@ -55,7 +55,7 @@ function enableLightMode() {
   footer.style.color = "black";
 
   // Save the theme preference to LocalStorage
-  localStorage.setItem("mode", "dark");
+  localStorage.setItem("mode", "light");
 }
 
 // Function Checks user's theme preference from local storage and apllies it 
@@ -75,3 +75,15 @@ night.addEventListener("click", enableLightMode);
 
 // Check and apply users mode preference on page load
 checkModePreference();
+
+// Function that allows user to input max three words
+function limitInputLength(event) {
+  const input = event.target;
+  const maxWords = 3;
+  const inputValue = input.value.trim(); //Remove leading whitespace
+  const words = inputValue.split(/\s+/);
+
+  if (words.length > maxWords) {
+    input.value = words.slice(0, maxWords)
+  }
+}
