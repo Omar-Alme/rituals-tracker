@@ -44,12 +44,19 @@ document.addEventListener("click", function (event) {
   }
 });
 
-
+var formCheckInputs = document.querySelectorAll(".form-check-input");
+formCheckInputs.forEach(function (input) {
+  input.addEventListener("click", function () {
+    this.checked = true;
+    this.classList.add("checked");
+  });
+});
 
 const addHabitsBtn = document.getElementById("addHabitsBtn");
 const cardContainer = document.getElementById("cardContainer");
 const habbitsList = document.getElementById("habbitList");
 
+// Add event listner to add style to display modal when add habit button clicked
 addHabitsBtn.addEventListener("click", function () {
   cardContainer.style.display = "none";
   habbitsList.style.display = "block";
