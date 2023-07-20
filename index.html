@@ -22,46 +22,48 @@
 <body>
   <div id="main-container" class="w-100">
     <nav class="navbar navbar-expand-md d-flex align-items-center">
-      <div class="container">
+      <div class="container new-media-container">
         <div class="logo-container">
-          <h1>Rituals</h1>
+          <img src="./assets/images/Logo.png" class="logo-image" alt="Logo" />
+          <img src="./assets/images/LogoLight.png" class="logo-light-image" alt="Logo" />
         </div>
-        <!-- Hamburger menu for smaller devices -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-label="Toggle navigation">
-          <span>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
             <i class="bi bi-list text-primary"></i>
           </span>
         </button>
-        <!-- Lightmode/Darkmode Toggle -->
+
         <div id="navbar-content" class="collapse navbar-collapse justify-content-end">
-          <div class="d-flex align-items-center">
-            <div class="theme d-flex justify-content-center p-2">
-              <!-- moon and sun icons -->
+          <div class="d-flex align-items-center media-setting-header">
+            <div class="mode d-flex justify-content-center p-2">
               <div class="moon-img rounded-circle p-2 d-flex justify-content-center align-items-center">
-                <img id="moon" src="assets/images/moon.svg" alt="moon icon for theme">
-                <img id="moon-light" src="assets/images/moon-light.png" alt="moon icon for theme">
+                <img src="assets/images/svg/moon.svg" id="moon" />
+                <img src="assets/images/moon-light.png" id="moon-light" />
               </div>
-              <div class="sun-img">
-                <img id="sun" src="assets/images/sun.svg" alt="sun icon for theme">
-                <img id="sun-mode" src="assets/images/sun-mode.png" alt="sun icon for theme">
-              </div>
-            </div>
-            <!-- instruction icon -->
-            <div class="instruction d-flex justify-content-center align-items-center rounded-circle p-2">
-              <div class="instruction-img d-flex justify-content-center align-items-center rounded-circle">
-                <img id="instruction-icon" src="assets/images/instruction.svg" alt="instruction icon">
-                <img id="instruction-light" src="assets/images/instruction-light-mode.png" alt="instruction icon">
+              <div class="night-img">
+                <img src="assets/images/svg/night.svg" id="night" />
+                <img src="assets/images/sun-mode.png" id="sun-mode" />
               </div>
             </div>
-            <!-- Vertical line seperator -->
+
+            <div class="notification d-flex align-items-center justify-content-center rounded-circle p-2">
+              <div class="notification-img rounded-circle d-flex justify-content-center align-items-center"
+                style="cursor: pointer;">
+                <img src="assets/images/svg/notification.svg" class="notification-dark-mode" id="notification-icon" />
+                <img src="assets/images/notification-light-mode.png" class="notification-light-mode" id="other-image" />
+              </div>
+            </div>
             <div class="vertical-line"></div>
-            <div class="user-img d-flex justify-content-center align-items-center p-2">
+            <div class="user-img d-flex align-items-center justify-content-center p-2">
               <div>
-                <img src="assets/images/user.png" alt="user icon">
+                <img src="assets/images/png/user.png" />
               </div>
               <div class="user-info d-flex flex-column justify-content-center">
                 <h3 class="user-name">James Bond</h3>
-                <p>Jamesbond@gmail.com</p>
+                <p>Jamesbond007@gmail.com</p>
               </div>
             </div>
           </div>
@@ -69,68 +71,96 @@
       </div>
     </nav>
 
+    <div class="notification-popup" id="notification-popup">
+      <!-- Popup content goes here -->
+      <!-- Example content: -->
+      <h5>Notifications</h5>
+      <span class="close-icon" id="close-icon">&times;</span>
+      <ul id="notification-list">
+        <li>Notification 1</li>
+        <li>Notification 2</li>
+        <li>Notification 3</li>
+      </ul>
+    </div>
 
-    <!-- Rituals container (Cards) -->
-    <div id="card-container">
-      <div class="card text-center mx-auto mt-5 bg-transparent shadow-0 border-0">
+    <div class="notification-popup" id="notification-popup1">
+      <!-- Popup content goes here -->
+      <!-- Example content: -->
+      <h5>Notifications</h5>
+      <span class="close-icon" id="close-icon1">&times;</span>
+      <ul id="notification-list">
+        <li>Notification 1</li>
+        <li>Notification 2</li>
+        <li>Notification 3</li>
+      </ul>
+    </div>
+
+    <!-- <div class="shadowed-element"></div>
+    <div class="shadowed-element1"></div>
+    <div class="shadowed-element2"></div>
+    <div class="shadowed-element3"></div> -->
+
+    <!-- card  -->
+    <div id="cardContainer" style="transform: scale(0.7)">
+      <div class="card text-center mx-auto mt-5 bg-transparent shadow-0 border-0" style="width: 400px">
         <div class="card-header shadow-0 border-0">
-          <img src="assets/images/bear.png" class="card-img-top mx-auto card-image" alt="panda image">
-          <img src="assets/images/rectangle.png" class="card-img-top mx-auto rectangle-image" alt="rectangle image">
+          <img src="assets/images/bear.png" class="card-img-top mx-auto card-image" alt="bear-img" />
+          <img src="assets/images/Rectangle.png" class="card-img-top mx-auto rectangle-image" alt="rectangle-im-img" />
           <div class="stars">
-            <img src="assets/images/star1.svg" alt="star image" class="card-img-top mx-auto star-image1">
-            <img src="assets/images/star2.svg" alt="star image" class="card-img-top mx-auto star-image2">
-            <img src="assets/images/star3.svg" alt="star image" class="card-img-top mx-auto star-image3">
-            <img src="assets/images/star4.svg" alt="star image" class="card-img-top mx-auto star-image4">
+            <img src="assets/images/star1.svg" class="card-img-top mx-auto star-image1" alt="star-img" />
+            <img src="assets/images/star2.svg" class="card-img-top mx-auto star-image2" alt="star-img" />
+            <img src="assets/images/star3.svg" class="card-img-top mx-auto star-image3" alt="star-img" />
+            <img src="assets/images/star4.svg" class="card-img-top mx-auto star-image4" alt="star-img" />
           </div>
         </div>
-        <!-- Ritual main card -->
+
         <div class="card-body">
           <h5 class="card-title">
-            Welcome, <b>James Bond</b> <img src="assets/images/wave.svg" alt="Waving emoji"></h5>
+            Welcome, <b> James Bond </b> <img src="assets/images/wave.svg" />
+          </h5>
           <p class="card-text card-desc">
-            To get started tracking your habits with rituals, please add your first habit by clicking the button below.
+            To get started habit tracking with rituals, please add a new habit
+            by clicking on the button below.
           </p>
-          <!-- Button that triggers modal -->
           <button id="addHabitsBtn" data-bs-toggle="modal" data-bs-target="#habitmodal" class="btn btn-primary add-btn">
             <span class="d-inline d-md-none">+</span>
-            <span class="d-none d-md-inline">+ Add New Habit</span>
+            <span class="d-none d-md-inline ">+ Add New Habits</span>
           </button>
         </div>
       </div>
     </div>
-    <!-- Habits list -->
-    <!-- display none -->
-    <div id="habit-list" class="text-white">
-      <div class="d-flex justify-content-center align-items-center">
+    <!-- habbit list  -->
+    <div id="habbitList" class="text-white" style="display: none">
+      <div class="d-flex justify-content-between align-items-center">
         <h2 class="count">Added Habits <span id="added-habits"></span></h2>
-        <!-- Button that triggers modal -->
         <button type="button" data-bs-toggle="modal" data-bs-target="#habitmodal"
-          class="btn btn-primary add-btn new-btn-add">
+          class="btn btn-primary add-btn new-btn-add" style="width: 283px !important;">
           <span class="d-inline d-md-none">+</span>
-          <span class="d-none d-md-inline">+ Add New Habit</span>
+          <span class="d-none d-md-inline">+ Add New Habits</span>
         </button>
+        <!-- Button trigger modal -->
+
         <!-- Modal -->
-        <div class="modal fade habit-modal" id="habitmodal" aria-colspan="habit-modal" aria-labelledby="habitmodalLabel"
-          aria-hidden="true">
+        <div class="modal fade" id="habitmodal" aria-colspan="habit-modal" class="habit-modal" tabindex="-1"
+          aria-labelledby="habitmodalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
-              <!-- modal title -->
               <div class="modal-header position-relative">
                 <h5 class="modal-title d-flex justify-content-center" id="habitmodalLabel">
                   Add a new habit
                 </h5>
-                <!-- modal close button -->
-                <button type="button" class="border-0 modal-btn" data-bs-dismiss="modal" aria-label="Close">
-                  <i class="fa-solid fa-x"></i>
+                <button type="button" class="text-white border-0 modal-btn" style="border-radius: 10%"
+                  data-bs-dismiss="modal" aria-label="Close">
+                  x
                 </button>
               </div>
-              <!-- modal body -->
+
               <div class="modal-body">
-                <div class="new-habit">
-                  <input type="text" class="new-habit-input" id="new-habit-input"
-                    placeholder="Enter habit title here ...">
+                <div class="new-habit" style="margin-bottom: 20px">
+                  <input class="new-habit-input" placeholder="Enter title here..." id="new-habit-input"
+                    style="background-color: transparent !important;" oninput="limitInputLength(event)" />
                 </div>
-                <!-- Habit icon 1 camera -->
+                <!-- list 1  -->
                 <div class="habit-list" style="margin-bottom: 20px">
                   <div class="d-flex align-items-center justify-content-between" onclick="handleRadioCheck(this)">
                     <div class="d-flex align-items-center">
@@ -313,42 +343,47 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex justify-content-center ">
+              <div class="d-flex justify-content-center footer" style="margin-bottom: 25px">
                 <button type="button" class="modal-cancel" data-bs-dismiss="modal">
                   Cancel
                 </button>
-                <button id="next-button" type="button" class="btn btn-primary">
-                  Add <i class="bi bi-plus"></i>
+                <button id="next-button" onclick="addHabitCard()" type="button" class="btn btn-primary">
+                  Next <i class="bi bi-arrow-right"></i>
                 </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Habit row container -->
-      <div class="row habit-card-row" id="habit-list-container"></div>
+      <!-- list added  -->
+      <!-- <div class="height-setting"> -->
+      <div class="row habbit-card-row" id="habit-list-container"></div>
+      <!-- </div> -->
     </div>
+
+    <!-- footer  -->
+    <!-- fixed-bottom  -->
+    <footer class="rounded mt-2 site-footer footer-setting-bottom"
+      style="height: 68px; line-height: 44px; padding: 15px;" id="footer-container">
+      <div class="container d-flex justify-content-between align-items-center footer-section">
+        <div>
+          <span class="footer-logo">Logo here</span>
+        </div>
+        <div></div>
+        <div class="icons">
+          <ul class="d-flex gap-3 list-unstyled mb-0">
+            <li>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </div>
-
-  <footer class="rounded mt-2 site-footer footer-setting-bottom" id="footer-container">
-    <div class="container d-flex justify-content-between align-items-center footer-section">
-      <div>
-        <span class="footer-logo">Rituals</span>
-      </div>
-      <div></div>
-      <div class="icons">
-        <ul class="d-flex gap-3 list-unstyled mb-0">
-          <li>
-            <a href="#" rel="noopener" target="_blank" aria-label="Link to github"><i class="bi bi-github"></i></a>
-          </li>
-          <li>
-            <a href="#" rel="noopener" target="_blank" aria-label="Link to linkedin"><i class="bi bi-linkedin"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
+  <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
   </script>
