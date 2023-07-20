@@ -46,6 +46,16 @@ document.addEventListener("click", function (event) {
 
 
 
+const addHabitsBtn = document.getElementById("addHabitsBtn");
+const cardContainer = document.getElementById("cardContainer");
+const habbitsList = document.getElementById("habbitList");
+
+addHabitsBtn.addEventListener("click", function () {
+  cardContainer.style.display = "none";
+  habbitsList.style.display = "block";
+});
+
+
 // Changing the theme
 let mode;
 var moon = document.getElementById("moon");
