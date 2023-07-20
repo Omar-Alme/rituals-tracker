@@ -13,3 +13,10 @@ var card = document.getElementsByClassName("habbit-card");
 var modal = document.querySelector(".modal-content");
 var modalInput = document.querySelector(".new-habit-input");
 var footer = document.querySelector(".footer-section");
+
+// Function that enables dark theme change
+function enableDarkMode() {
+  moon.classList.add("dark-mode");
+  body.classList.add("dark-mode-body");
+  body.classList.r
+}
