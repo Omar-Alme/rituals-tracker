@@ -137,9 +137,41 @@ body.light-mode-body {
   height: 125px;
 }
 
+.card-container {
+  transform: scale(0.7);
+}
+
+.card {
+  width: 400px;
+}
+
 .card-desc {
   font-size: 18px;
   font-weight: 500px;
   line-height: 22px;
   color: #686a63;
+}
+
+.rectangle-image {
+  width: 290px;
+  height: 15px;
+}
+
+.stars img {
+  width: 150px;
+  height: 130px;
+  position: absolute;
+  top: 0;
+}
+
+.stars .star-image1 {
+  right: 0;
+  bottom: 0;
+  top: 60px;
+}
+
+.stars .star-image3 {
+  left: 0;
+  bottom: 0;
+  top: 60px;
 }
