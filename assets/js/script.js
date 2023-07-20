@@ -22,9 +22,19 @@ function enableDarkMode() {
   body.classList.remove("modal-open");
 
   night.classList.remove("light-mode");
-  heading3.style.color = "white;"
-  title.style.color = "white;"
-  count.style.color = "white;"
+  heading3.style.color = "white;";
+  title.style.color = "white;";
+  count.style.color = "white;";
+  countNo.style.color = "white;";
+  modal.style.backgroundColor = "#1f2129;";
+  modal.style.color = "white;";
+  modalInput.style.backgroundColor = "#10121a;";
+  modalInput.style.color = "white;";
+  footer.style.color = "white";
+
+
+
+
 
 
 
