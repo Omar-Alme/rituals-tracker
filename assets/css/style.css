@@ -137,6 +137,8 @@ body.light-mode-body {
   height: 125px;
 }
 
+
+
 .card-container {
   transform: scale(0.7);
 }
@@ -195,6 +197,50 @@ body.light-mode-body {
   right: 0;
 }
 
+/* Ritual main card */
+.card-title {
+  font-size: 25px;
+  font-style: normal;
+  color: white;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-title b {
+  font-weight: 600;
+}
+
+
+/* Modal */
+
+.modal {
+  overflow: hidden;
+}
+
+.modal.show .modal-dialog {
+  z-index: 20;
+}
+
+.modal-backdrop.fade.show {
+  position: relative;
+  display: none;
+  z-index: 999;
+}
+
+#habit-list {
+  margin: 40px 100px 60px 110px;
+}
+
+#habit-list h2 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+
 
 /* Buttons */
 .add-btn {
@@ -210,6 +256,31 @@ body.light-mode-body {
   margin-top: 10px;
 }
 
+.add-btn:hover {
+  background-color: var(--secondary);
+}
+
+.light-mode-body .add-btn {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.light-mode-body .add-btn:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.btn.btn-primary.add-btn.new-btn-add {
+  border: 0;
+  border-radius: 15px;
+  width: 190px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
 
 /* Footer */
 .navbar,
