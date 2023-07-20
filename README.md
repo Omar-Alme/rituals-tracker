@@ -4,7 +4,7 @@ Rituals
 
 This website can be accessed by this [link](https://omar-alme.github.io/rituals-tracker/)
 
-![Preview all screens][def]
+![Preview all screens][lighthouse]
 
 Here is a link to preview the website on all screens [Responsive Preview](https://ui.dev/amiresponsive?url=https://omar-alme.github.io/rituals-tracker/)
 
@@ -27,20 +27,24 @@ Here is a link to preview the website on all screens [Responsive Preview](https:
 
 ### Color Scheme
 
-![Color Pallete](documentations/color-pallete.png)
-![Color numbers](documentations/colors.png)
+![Color Pallete](assets/documentations/color-pallete.png)
+![Color numbers](assets/documentations/colors.png)
+
+This colour pallete has been used as it is very calming and easy on the eye. Green and the shades of green have many psychological benefits. I used it specifically as it goes incredibly well with the purpose of the website. Green is a symbolical colour for GO and Passing and accomplishment that's why. I used it here as the whole purpose is to realign users lifes. By getting them to show up everyday to achieve small habits and improve drastically over time. 1% improvement a day is a 365% improvement by the end of the year.
 
 ### Typography
 
-![Google font](documentations/googlefont.png)
+![Google font](assets/documentations/googlefont.png)
+
+This google font was used as it is very aesthetic and extremely readable.
 
 ### Wireframes
 
 #### Light Mode
-![Wireframe light mode](documentations/rituals-light-mode.png)
+![Wireframe light mode](assets/documentations/rituals-light-mode.png)
 
 #### Dark Mode
-![Wireframe dark mode](documentations/rituals-dark-mode.png)
+![Wireframe dark mode](assets/documentations/rituals-dark-mode.png)
 
 
 ## Technologies Used
@@ -71,12 +75,23 @@ Here is a link to preview the website on all screens [Responsive Preview](https:
 
 ## Validator testing
 + ### HTML
+
+Html validation passed with no warnings.
+
+![Html validation](assets/documentations/html-validation.png)
 + ### CSS
 
+CSS validation passed with no warnings.
+
+![CSS validation](assets/documentations/css-validation.png)
 + ### JS
+
+![Jshint](assets/documentations/jshint-validation.png)
 
 + ### Accessibility and performance 
 #### Lighthouse
+
+ ![lighthouse](assets/documentations/lighthouse.png)
 
 ## Deployment
 
@@ -111,3 +126,4 @@ All my media and icons have been retrieved from [iconsax.io](iconsax.io) as well
 ## Acknowledgements
 
 - I would like to acknowledge [Chris Pennington](https://www.youtube.com/watch?v=_FFkaBTqJto)  for the design idea for the website. 
+- I would also like to acknowledge the authot of Atomic habit James clear, as i was reading he's book when i decided to make a habit tracking application.
