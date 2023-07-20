@@ -62,11 +62,49 @@ addHabitsBtn.addEventListener("click", function () {
   habbitsList.style.display = "block";
 });
 
+// Selected List
+let selectedHabitList = null;
+var selectedHabits = [];
+
+// Checks and pushes selected habits to an array
+function handleRadioClick(radioButton) {
+  var selectedHabit = radioButton.closest(".habit-list");
+
+  if (radioButton.checked) {
+    selectedHabits.push(selectedHabit);
+    console.log(selectedHabits);
+  } else {
+    var index = selectedHabits.indexOf(selectedHabit);
+    if (index !== -1) {
+      selectedHabits.splice(index, 1);
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  var nextButton = document.getElementById("next-button");
+  nextButton.addEventListener("click", handleNextButtonClick);
+});
+
+// Add habits list
+var habitCount = 0;
+// function that closes modal when habit added
+function handleNextButtonClick() {
+  var habitModal = document.getElementById("habitmodal");
+  habitModal.classList.remove("show");
+  habitModal.style.display = "none";
+
+  var habitListContainer = document.getElementById("habit-list-container");
+  var newHabitTitle = document.getElementById("new-habit-input").value;
+
+  for ()
+}
+
 
 // Changing the theme
 let mode;
 var moon = document.getElementById("moon");
-var moonLight = document.getElementById("moonLight");
+var moonLight = document.getElementById("moon-light");
 var night = document.getElementById("night");
 var navbar = document.querySelector(".navbar");
 var heading3 = navbar.querySelector("h3");
