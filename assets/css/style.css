@@ -71,3 +71,28 @@ body.light-mode-body {
   margin-left: 10px;
   box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+
+.instruction .instruction-img {
+  position: relative;
+}
+
+.user-info {
+  margin-top: 13px;
+  margin-left: 10px;
+}
+
+.user-info p {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.user-info h3 {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+
+.verti
