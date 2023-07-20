@@ -694,9 +694,12 @@ body.modal-open {
   border-radius: 50%;
 }
 
-
 .light-mode-body .habbit-text {
   color: black;
+}
+
+.dark-mode-body .habbit-text {
+  color: white;
 }
 
 .light-mode-body .habbit-card {
