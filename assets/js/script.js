@@ -18,5 +18,15 @@ var footer = document.querySelector(".footer-section");
 function enableDarkMode() {
   moon.classList.add("dark-mode");
   body.classList.add("dark-mode-body");
-  body.classList.r
+  body.classList.remove("light-mode-body");
+  body.classList.remove("modal-open");
+
+  night.classList.remove("light-mode");
+  heading3.style.color = "white;"
+  title.style.color = "white;"
+  count.style.color = "white;"
+
+
+
+
 }
