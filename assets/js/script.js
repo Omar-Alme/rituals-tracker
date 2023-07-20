@@ -22,6 +22,30 @@ function notifications() {
   });
 }
 notifications();
+
+// Same notifictions function for light mode
+var otherImage = document.getElementById("other-image");
+otherImage.addEventListener("click", function () {
+  var notificationPopup = document.getElementById("notification-popup1");
+  notificationPopup.classList.toggle("show");
+});
+
+var closeIcon = document.getElementById("close-icon1");
+closeIcon.addEventListener("click", function () {
+  var notificationPopup = document.getElementById("notification-popup1");
+  notificationPopup.classList.remove("show");
+});
+
+// Event listeners for clicks outside the popup
+document.addEventListener("click", function (event) {
+  var notificationPopup = document.getElementById("notification-popup");
+  if (!notificationPopup.contains(event.target) && event.target !== notificationIcon) {
+    notificationPopup.classList.remove("show");
+  }
+});
+
+
+
 // Changing the theme
 let mode;
 var moon = document.getElementById("moon");
