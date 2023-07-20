@@ -4,7 +4,6 @@ Rituals
 
 This website can be accessed by this [link](https://omar-alme.github.io/rituals-tracker/)
 
-![Preview all screens][lighthouse]
 
 Here is a link to preview the website on all screens [Responsive Preview](https://ui.dev/amiresponsive?url=https://omar-alme.github.io/rituals-tracker/)
 
