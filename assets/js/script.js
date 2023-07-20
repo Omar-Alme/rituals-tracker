@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 function notifications() {
   // Add event listener to the notification icon
   var notificationIcon = document.getElementById("notification-icon");
