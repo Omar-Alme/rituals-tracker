@@ -13,10 +13,15 @@ function notifications() {
     notificationPopup.classList.remove("show");
   });
 
-  // Event listeners
-
+  // Event listeners for clicks outside the popup
+  document.addEventListener("click", function (event) {
+    var notificationPopup = document.getElementById("notification-popup");
+    if (!notificationPopup.contains(event.target) && event.target !== notificationIcon) {
+      notificationPopup.classList.remove("show");
+    }
+  });
 }
-
+notifications();
 // Changing the theme
 let mode;
 var moon = document.getElementById("moon");
