@@ -4,7 +4,7 @@ Rituals
 
 This website can be accessed by this [link](https://omar-alme.github.io/rituals-tracker/)
 
-![Preview all screens](documentations/)
+![Preview all screens][def]
 
 Here is a link to preview the website on all screens [Responsive Preview](https://ui.dev/amiresponsive?url=https://omar-alme.github.io/rituals-tracker/)
 
@@ -56,8 +56,6 @@ Here is a link to preview the website on all screens [Responsive Preview](https:
 
 ## Validator testing
 + ### HTML
-
-
 + ### CSS
 
 + ### JS
@@ -96,3 +94,6 @@ In your IDE Terminal, type the following command to clone my repository:
 ## Acknowledgements
 
 - I would like to acknowledge Chris Pennington for the design idea for the website. 
+
+
+[def]: documentations/
