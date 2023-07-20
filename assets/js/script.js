@@ -32,8 +32,31 @@ function enableDarkMode() {
   modalInput.style.color = "white;";
   footer.style.color = "white";
 
+  // Save the mode preference to LocalStorage
+  localStorage.setItem("mode", "dark");
+}
 
+// Function that enables light theme change
+function enableLightMode() {
+  moon.classList.add("light-mode");
+  body.classList.add("light-mode-body");
+  body.classList.remove("dark-mode-body");
+  body.classList.remove("modal-open");
 
+  night.classList.remove("dark-mode");
+  heading3.style.color = "black;";
+  title.style.color = "black;";
+  count.style.color = "black;";
+  countNo.style.color = "black;";
+  modal.style.backgroundColor = "white";
+  modal.style.color = "black;";
+  modalInput.style.backgroundColor = "white";
+  modalInput.style.color = "black";
+  footer.style.color = "black";
+
+  // Save the mode preference to LocalStorage
+  localStorage.setItem("mode", "dark");
+}
 
 
 
