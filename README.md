@@ -125,12 +125,11 @@ In your IDE Terminal, type the following command to clone my repository:
 ## Credits
 
 - #### Content
-  - https://stackoverflow.com/questions/45037844/arrange-2-items-per-row-using-flexbox
-  - https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
-  - https://www.youtube.com/watch?v=TyITCYwsWHs
-  - https://www.youtube.com/watch?v=gzCUq_VQ7Y8&t=176s
-  - https://developer.mozilla.org/en-US/docs/Web/CSS/::after
-  - 
+  - [Flexbox](https://stackoverflow.com/questions/45037844/arrange-2-items-per-row-using-flexbox) used this to but elements into two a row.
+  - [Lightmode toggle](https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp) helped with the functionality of the toggle
+  - [Darkmode toggle](https://www.youtube.com/watch?v=TyITCYwsWHs) helped me build the lightmode toggle.
+  - [Udemy javascript course](https://www.udemy.com/course/the-complete-javascript-course/) helped me with all the javascript functionalities.
+   
 - #### Media
 
 All my media and icons have been retrieved from [iconsax.io](iconsax.io) as well as [iconscout](https://iconscout.com/icons/glass?price=free).
