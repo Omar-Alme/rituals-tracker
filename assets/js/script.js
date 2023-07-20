@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Add habits list
 var habitCount = 0;
-// function that closes modal when habit added
+// function that closes modal when habit added then creates a card for the selected habit to be added in the habit list container.
 function handleNextButtonClick() {
   var habitModal = document.getElementById("habitmodal");
   habitModal.classList.remove("show");
@@ -97,7 +97,16 @@ function handleNextButtonClick() {
   var habitListContainer = document.getElementById("habit-list-container");
   var newHabitTitle = document.getElementById("new-habit-input").value;
 
-  for ()
+  for (var i = 0; i < selectedHabits.length; i++) {
+    habitCount += 1;
+    document.getElementById("added-habits").innerText = habitCount;
+    var selectedHabit = selectedHabits.slice(-1).pop();
+    var habitText = selectedHabit.querySelector("span").textContent;
+    var habitId = Date.now();
+    createHabitCard(habitId, habitText, newHabitTitle, habitListContainer);
+
+    // Store the habit in local storage
+  }
 }
 
 
