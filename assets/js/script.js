@@ -120,9 +120,14 @@ function handleNextButtonClick() {
     break;
   }
 
-  // Re
-
+  // Remove the "footer" class from the bottom if there is more than one habit card
+  if (habitCount > 5) {
+    var footerElement = document.getElementById("footer-container");
+    // alert(footerElement);
+    footerElement.classList.remove("footer-setting-bottom");
+  }
 }
+
 
 //On page refresh user retrives the habits from local storage
 
@@ -133,6 +138,19 @@ function displayStoredHabits() {
   var habitListContainer = document.getElementById("habit-list-container");
   habitCount = habits.length;
 
+  for (var i = 0; i < habitCount; i++) {
+    var habitData = habits[i];
+    createHabitCard(
+      habitData.habitId,
+      habitData.habitText,
+      habitData.habitTitle,
+      habitListContainer
+    );
+  }
+
+
+  // Update the habit count display
+  document.getElementById("added-habits").innerText = habitCount;
 
 
 
