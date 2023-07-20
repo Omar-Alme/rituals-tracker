@@ -68,6 +68,10 @@ function checkModePreference() {
   }
 }
 
+// Add event listeners to the buttons
+moon.addEventListener("click", enableDarkMode);
+moonLight.addEventListener("click", enableDarkMode);
+night.addEventListener("click", enableLightMode);
 
-
-}
+// Check and apply users mode preference on page load
+checkModePreference();
