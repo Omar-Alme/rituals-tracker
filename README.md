@@ -4,7 +4,7 @@
 
 Rituals
 
-This website can be accessed by this [link](https://omar-alme.github.io/habit-tracker-ritual/)
+This website can be accessed by this [link](https://omar-alme.github.io/rituals-tracker/)
 
 ![Preview all screens](documentations/)
 
@@ -72,7 +72,7 @@ Here is a link to preview the website on all screens [Responsive Preview]()
   - From the source section drop-down menu, select the **Main** Branch, then click "Save".
   - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found [here](https://omar-alme.github.io/habit-tracker-ritual/)
+The live link can be found [here](https://omar-alme.github.io/rituals-tracker/)
 
 ## Local Deployment
 
