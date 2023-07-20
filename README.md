@@ -1,39 +1,98 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Rituals text/logo](documentations/Marketme.png "Rituals logo")
 
-Welcome,
+# Rituals : Realign Your Life
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Rituals
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+This website can be accessed by this [link](https://omar-alme.github.io/habit-tracker-ritual/)
 
-## Codeanywhere Reminders
+![Preview all screens](documentations/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+Here is a link to preview the website on all screens [Responsive Preview]()
 
-`python3 -m http.server`
+## User Stories
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Visior goals:
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- As a visitor, I want to know main goal of the site, so I can know how to function it.
+- As a visitor, I want to be able to change the theme of the site, so I can adjust it to the time of the day for better vision.
+- As a visitor, I want to simply add rituals, so I can track them.
+- As a visitor, I want to simply name the rituals so I know what I'm tracking
+- As a visitor, I want to be able to track the completed rituals, so i can see what rituals i completed and what i need to complete
+- As a visitor, I want to be able to remove rituals, incase i added one accidently.
+-  
 
-`http_server`
+## Features
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Design
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Color Scheme
 
-To log into the Heroku toolbelt CLI:
+![Color Pallete](documentations/color-pallete.png)
+![Color numbers](documentations/colors.png)
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Typography
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![Google font](documentations/googlefont.png)
 
----
+### Wireframes
 
-Happy coding!
+#### Light Mode
+![Wireframe light mode](documentations/rituals-light-mode.png)
+
+#### Dark Mode
+![Wireframe dark mode](documentations/rituals-dark-mode.png)
+
+
+## Technologies Used
+
+
+## Testing
+
+
+## Manual Testing
+
+### Bugs
+
+
+## Validator testing
++ ### HTML
++ ### CSS
+
++ ### JS
+
++ ### Accessibility and performance 
+#### Lighthouse
+
+## Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the [GitHub repository](https://github.com/Omar-Alme/habit-tracker-ritual), navigate to the Settings tab
+  - From the source section drop-down menu, select the **Main** Branch, then click "Save".
+  - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found [here](https://omar-alme.github.io/habit-tracker-ritual/)
+
+## Local Deployment
+
+In order to make a local copy of this project, you can clone it.
+In your IDE Terminal, type the following command to clone my repository:
+
+-      git clone https://github.com/Omar-Alme/habit-tracker-ritual
+
+## Credits
+
+- #### Content
+  - https://stackoverflow.com/questions/45037844/arrange-2-items-per-row-using-flexbox
+  - https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
+  - https://www.youtube.com/watch?v=TyITCYwsWHs
+  - https://www.youtube.com/watch?v=gzCUq_VQ7Y8&t=176s
+  - https://developer.mozilla.org/en-US/docs/Web/CSS/::after
+  - 
+- #### Media
+
+
+## Acknowledgements
+
+- I would like to acknowledge Chris Pennington for the design idea for the website. 
