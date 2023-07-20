@@ -1,5 +1,3 @@
-![Rituals text/logo](documentations/Marketme.png "Rituals logo")
-
 # Rituals : Realign Your Life
 
 Rituals
@@ -8,7 +6,7 @@ This website can be accessed by this [link](https://omar-alme.github.io/rituals-
 
 ![Preview all screens](documentations/)
 
-Here is a link to preview the website on all screens [Responsive Preview]()
+Here is a link to preview the website on all screens [Responsive Preview](https://ui.dev/amiresponsive?url=https://omar-alme.github.io/rituals-tracker/)
 
 ## User Stories
 
