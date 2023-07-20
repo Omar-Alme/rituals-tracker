@@ -45,6 +45,21 @@ Here is a link to preview the website on all screens [Responsive Preview](https:
 
 ## Technologies Used
 
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) was used as the foundation of the site.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/css) - was used to add the styles and layout of the site.
+- [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) - was used to arrange items on the pages.
+- [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/grid) - was used to make the hero section responsive.
+- [CSS Grid-Template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) - was used in hero section.
+- [CSS roots](https://developer.mozilla.org/en-US/docs/Web/CSS/:root) was used to declaring global CSS variables and apply them throughout the project. 
+- [Balsamiq](https://balsamiq.com/) was used to make wireframes for the website.
+- [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
+- [Git](https://git-scm.com/) was used for the version control of the website.
+- [GitHub](https://github.com/) was used to host the website.
+- [remove background](https://www.remove.bg/b/remove-logo-backgrounds) was used to remove backgrounds from images.
+- [FontAwesome](https://fontawesome.com/) used for icons in the pricing cards.
+- [UI Amiresponsive](https://ui.dev/amiresponsive) Preview responsiveness of website.
+- [Javascript](https://www.javascript.com/) Functionality of the website.
+- [iconsax.io](http://iconsax.io/) all the icons on the website
 
 ## Testing
 
@@ -90,10 +105,9 @@ In your IDE Terminal, type the following command to clone my repository:
   - 
 - #### Media
 
+All my media and icons have been retrieved from [iconsax.io](iconsax.io) as well as [iconscout](https://iconscout.com/icons/glass?price=free).
+
 
 ## Acknowledgements
 
-- I would like to acknowledge Chris Pennington for the design idea for the website. 
-
-
-[def]: documentations/
+- I would like to acknowledge [Chris Pennington](https://www.youtube.com/watch?v=_FFkaBTqJto)  for the design idea for the website. 
